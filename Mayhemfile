@@ -1,0 +1,5 @@
+project: rnshah9/openfpga
+target: openfpga
+
+cmds:
+  - cmd: /repo/openfpga/openfpga -i
