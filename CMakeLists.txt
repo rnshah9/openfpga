@@ -59,10 +59,12 @@ list(GET VERSION_LIST 2 OPENFPGA_VERSION_PATCH)
 set(OPENFPGA_VERSION_PRERELEASE "dev")
 
 message(STATUS "include dir: ${CMAKE_CURRENT_SOURCE_DIR}")
+message(STATUS "include dir: ${CMAKE_MODULE_PATH}")
 
 # Include user-defined functions
 list(APPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/cmake/modules)
 include(FilesToDirs)
+message(STATUS "include dir: ${CMAKE_MODULE_PATH}")
 
 # Set the assertion level
 add_definitions("-DVTR_ASSERT_LEVEL=${VTR_ASSERT_LEVEL}")
