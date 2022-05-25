@@ -58,6 +58,8 @@ list(GET VERSION_LIST 1 OPENFPGA_VERSION_MINOR)
 list(GET VERSION_LIST 2 OPENFPGA_VERSION_PATCH)
 set(OPENFPGA_VERSION_PRERELEASE "dev")
 
+message(STATUS "include dir: ${CMAKE_CURRENT_SOURCE_DIR}")
+
 # Include user-defined functions
 list(APPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/cmake/modules)
 include(FilesToDirs)
