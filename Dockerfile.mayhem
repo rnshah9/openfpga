@@ -12,5 +12,5 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install -y libgtk-3-dev libx11-dev
 
 COPY . /repo
 WORKDIR /repo/build
-# RUN cmake ..
-# RUN make -j8
+RUN cmake ..
+RUN make -j8
